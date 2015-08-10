@@ -167,9 +167,9 @@ It also includes:
 * the number of actions a user would have to take, for example pressing move and select buttons (eg `Total 'user' actions = 56`)
 * the total actions the program used to complete challenge, this includes strategy selection (eg `Total actions = 59`)
 
-The output of `Additional details...` is provided by Hipster to show which states were used, and action under taken.
+The output of `Additional details...` is provided by Hipster to show which states were used, and actions taken.
 
-Items in the states list are of the form ''@(x,y). Between the quotes is the message, and between the parenthesis is the location of the cursor in the keyboard map.
+Items in the states list are of the form ''@(x,y). Between the quotes is the message, and between the parentheses is the location of the cursor in the keyboard map.
  
 
 Lessons from the challenge
@@ -184,4 +184,4 @@ I learned a few things from this exercise...
 Future work
 ===========
 
-This project was a first brush attempt at solving the problem. I welcome any suggestions for improvement or if you'd simply like to comment on the project. I don't plan on building on this example, but will incorperate any good suggestion.
+This project was a first brush attempt at solving the problem. I welcome any suggestions for improvement or if you'd simply like to comment on the project. I don't plan on building on this example, but will incorporate any good suggestion.
