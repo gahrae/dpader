@@ -37,22 +37,26 @@ u v w x y z - + ^ =
 That is, all alphanumeric keys and the following:
 
 `_`: A single space
+<br />
 `-`: A hyphen
+<br />
 `+`: Switch case for the next letter only
+<br />
 `^`: Toggle caps lock (that is, switch the case of all letters)
+<br />
 `=`: Enter, complete
 
 *Obviously I replaced keys like "BKSP" and "ENTER" with shorter versions
 
-And then the hardware would include a d-pad (or some form of control where you could go up, down, left and right)
+And then the hardware would include a d-pad (or some form of control where you could go `up`, `down`, `left` and `right`)
 
-The screen also typically let you move from one side directly to the other. That is, if you were focussed on the letter J, pressing right would allow you to move to the letter A.
+The screen also typically let you move from one side directly to the other. That is, if you were focussed on the letter `J`, pressing `right` would allow you to move to the letter `A`.
 
 Whenever I was entering my name, I'd always try to work out the quickest way to do so.
 
 #### Goal:
 
-Your program will take string input which may include any alphanumeric character including a space and hyphen, and your goal is to output the shortest amount of key presses on the d-pad to output the required string.
+Your program will take string input which may include any alphanumeric character including a space and hyphen, and your goal is to **output the shortest amount of key presses** on the d-pad to output the required string.
 
 #### Considerations:
 
@@ -67,23 +71,35 @@ Enter `=` must be pressed at the end
 `output: 43`
 
 ##### Explained:
-```
-`A` -> `C` = 2
-`C` -> `^` = 6 (moving to the left)
-`^` -> `o` = 5
-`o` -> `d` = 2
-`d` -> `e` = 1
-`e` -> `+` = 5
-`+` -> `_` = 1
-`_` -> `+` = 1
-`+` -> `G` = 3
-`G` -> `o` = 3
-`o` -> `l` = 3
-`l` -> `f` = 5
-`f` -> `=` = 6
-```
 
-Note that it is quicker to hit the `+` twice for a `_` and a `G` than it is to hit ^ once, then swap back.
+`A` -> `C` = 2
+<br />
+`C` -> `^` = 6 (moving to the left)
+<br />
+`^` -> `o` = 5
+<br />
+`o` -> `d` = 2
+<br />
+`d` -> `e` = 1
+<br />
+`e` -> `+` = 5
+<br />
+`+` -> `_` = 1
+<br />
+`_` -> `+` = 1
+<br />
+`+` -> `G` = 3
+<br />
+`G` -> `o` = 3
+<br />
+`o` -> `l` = 3
+<br />
+`l` -> `f` = 5
+<br />
+`f` -> `=` = 6
+<br />
+
+Note that it is quicker to hit the `+` twice for a `_` and a `G` than it is to hit `^` once, then swap back.
 
 The winning submission (I'll allow at least 1w) will be the shortest solution (in bytes). As this is my first question, I hope this is clear and not too hard.
 
