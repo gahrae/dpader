@@ -120,7 +120,7 @@ Example output
 --------------
 
 Command
-`java -jar dpader-0.0.1-SNAPSHOT-jar-with-dependencies.jar "Golf Code"`
+`java -jar dpader-0.0.1-SNAPSHOT-jar-with-dependencies.jar "Code Golf"`
 
 Output
 ```
