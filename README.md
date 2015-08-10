@@ -14,7 +14,7 @@ This solution also describes what actions were taken so that they can be verifie
 What was the Golf Code challenge?
 ---------------------------------
 
-## The puzzle:
+### The puzzle:
 
 Consider a console/hand-held game with a d-pad where you are required to enter a name of sorts. This appeared in many older games before the use of QWERTY was popularized in consoles (e.g. I believe the Wii uses a QWERTY keyboard layout for input). Typically, the on-screen keyboard looks to the effect of*:
 
@@ -50,22 +50,24 @@ The screen also typically let you move from one side directly to the other. That
 
 Whenever I was entering my name, I'd always try to work out the quickest way to do so.
 
-## Goal:
+#### Goal:
 
 Your program will take string input which may include any alphanumeric character including a space and hyphen, and your goal is to output the shortest amount of key presses on the d-pad to output the required string.
 
-## Considerations:
+#### Considerations:
 
 You do not need to include the key pressed for pressing the actual character.
 Focus always starts at the `A`
 Enter `=` must be pressed at the end
 
-## Example:
+#### Example:
 
 `input: Code Golf`
+<br />
 `output: 43`
 
-### Explained:
+##### Explained:
+```
 `A` -> `C` = 2
 `C` -> `^` = 6 (moving to the left)
 `^` -> `o` = 5
@@ -79,6 +81,7 @@ Enter `=` must be pressed at the end
 `o` -> `l` = 3
 `l` -> `f` = 5
 `f` -> `=` = 6
+```
 
 Note that it is quicker to hit the `+` twice for a `_` and a `G` than it is to hit ^ once, then swap back.
 
@@ -88,10 +91,10 @@ The winning submission (I'll allow at least 1w) will be the shortest solution (i
 Running the solution
 --------------------
 
-## Assembly to a Jar file
+#### Assembly to a Jar file
 `mvn clean compile assembly:single`
 
-## Execute Jar file
+#### Execute Jar file
 ```
 cd target
 java -jar dpader-0.0.1-SNAPSHOT-jar-with-dependencies.jar "Code Golf"
@@ -137,8 +140,8 @@ Total number of iterations: 163
 ```
 
 
-What is this output
-===================
+What is this output?
+====================
 
 The output includes the challenge requirements to display:
 * the number of movements between keys (eg `A -> C = 2`)
