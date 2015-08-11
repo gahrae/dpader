@@ -6,15 +6,13 @@ import java.util.List;
 import es.usc.citius.hipster.algorithm.Algorithm;
 import es.usc.citius.hipster.model.impl.WeightedNode;
 
-
 /**
  * Solution to Golf Code challenge using A Star Search algorithm.
  * 
  * Golf Code challenge:
  * http://codegolf.stackexchange.com/questions/53805/enter-your-name-via-a-d-pad
  * 
- * Java search algorithm library "Hipster":
- * http://www.hipster4j.org/
+ * Java search algorithm library "Hipster": http://www.hipster4j.org/
  * 
  * @author Gareth S.
  */
@@ -28,13 +26,13 @@ public class DPader {
 			return;
 		}
 
-//		String message = "Code Golf";
+		// String message = "Code Golf";
 		String message = args[0];
 
 		Algorithm<DPadAction, DPad, WeightedNode<DPadAction, DPad, Double>>.SearchResult result = DPadSearch.search(message);
 		displayResult(result, message);
 	}
-	
+
 	public static void displayUsage() {
 		System.out.println("java DPader \"a message\"");
 	}
@@ -44,11 +42,13 @@ public class DPader {
 			String message) {
 
 		String resultMessage = result.getGoalNode().state().getMessage();
-		boolean solutionFound = DPadSearch.encodeMessage(message).equals(resultMessage);
-		
+		boolean solutionFound = DPadSearch.encodeMessage(message).equals(
+				resultMessage);
+
 		if (solutionFound) {
 
-			List<WeightedNode<DPadAction, DPad, Double>> path = result.getGoalNode().path();
+			List<WeightedNode<DPadAction, DPad, Double>> path = result
+					.getGoalNode().path();
 			Collections.reverse(path);
 
 			Character currentKey = null;
@@ -66,7 +66,9 @@ public class DPader {
 				boolean isPresing = action == DPadAction.PRESS;
 				if (isPresing) {
 					Character nextKey = step.previousNode().state().getCursorKey();
-					System.out.println(currentKey + " -> " + nextKey + " = " + moveTransitionSum);
+					System.out.println(currentKey 
+							+ " -> " + nextKey 
+							+ " = " + moveTransitionSum);
 
 					currentKey = nextKey;
 					moveTransitionSum = 0;
@@ -87,7 +89,7 @@ public class DPader {
 						|| action == DPadAction.PRESS) {
 					userActionSum++;
 				}
-				
+
 				totalActionSum++;
 
 			}
