@@ -53,8 +53,7 @@ public class DPad {
 	private char[][] copyArray(char[][] array) {
 		char[][] newArray = new char[array.length][];
 		for (int i = 0; i < array.length; i++)
-			for (int j = 0; j < array[i].length; j++)
-				newArray[i] = Arrays.copyOf(array[i], array[i].length);
+			newArray[i] = Arrays.copyOf(array[i], array[i].length);
 		return newArray;
 	}
 
