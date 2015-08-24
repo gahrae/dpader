@@ -3,8 +3,6 @@ package dpader;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.google.common.base.Predicate;
-
 import es.usc.citius.hipster.algorithm.Algorithm;
 import es.usc.citius.hipster.algorithm.Hipster;
 import es.usc.citius.hipster.model.Transition;
@@ -15,6 +13,7 @@ import es.usc.citius.hipster.model.function.HeuristicFunction;
 import es.usc.citius.hipster.model.impl.WeightedNode;
 import es.usc.citius.hipster.model.problem.ProblemBuilder;
 import es.usc.citius.hipster.model.problem.SearchProblem;
+import es.usc.citius.hipster.util.Predicate;
 
 public class DPadSearch {
 

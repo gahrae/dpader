@@ -144,7 +144,7 @@ Total actions = 59
 
 Additional details...
 Total solutions: 1
-Total time: 22.64 ms
+Total time: 15
 Total number of iterations: 163
 + Solution 1: 
  - States: 
