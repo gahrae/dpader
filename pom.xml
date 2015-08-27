@@ -9,7 +9,7 @@
 		<dependency>
 			<groupId>es.usc.citius.hipster</groupId>
 			<artifactId>hipster-core</artifactId>
-			<version>1.0.0-rc2</version>
+			<version>1.0.0-rc1</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
