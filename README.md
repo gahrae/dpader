@@ -11,6 +11,8 @@ A robust solution will allow the underlying problem to change (for example, chan
 
 This solution also describes what actions were taken so that they can be verified or used.
 
+![Build Status](http://api.travis-ci.org/gahrae/dpader.svg?branch=master)
+
 What was the Golf Code challenge?
 ---------------------------------
 
