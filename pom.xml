@@ -5,6 +5,20 @@
 	<artifactId>dpader</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Gareth Stretton</name>
+			<email>gareth.stretton@gmail.com</email>
+		</developer>
+	</developers>
+
 	<dependencies>
 		<dependency>
 			<groupId>es.usc.citius.hipster</groupId>
@@ -47,4 +61,5 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>
