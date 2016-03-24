@@ -18,6 +18,12 @@
 			<email>gareth.stretton@gmail.com</email>
 		</developer>
 	</developers>
+	
+	<scm>
+	  <connection>scm:git:git@github.com:gahrae/dpader.git</connection>
+	  <developerConnection>scm:git:git@github.com:gahrae/dpader.git</developerConnection>
+	  <url>git@github.com:gahrae/dpader.git</url>
+	</scm>
 
 	<dependencies>
 		<dependency>
