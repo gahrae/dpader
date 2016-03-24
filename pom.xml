@@ -18,11 +18,11 @@
 			<email>gareth.stretton@gmail.com</email>
 		</developer>
 	</developers>
-	
+
 	<scm>
-	  <connection>scm:git:git@github.com:gahrae/dpader.git</connection>
-	  <developerConnection>scm:git:git@github.com:gahrae/dpader.git</developerConnection>
-	  <url>git@github.com:gahrae/dpader.git</url>
+		<connection>scm:git:git@github.com:gahrae/dpader.git</connection>
+		<developerConnection>scm:git:git@github.com:gahrae/dpader.git</developerConnection>
+		<url>git@github.com:gahrae/dpader.git</url>
 	</scm>
 
 	<dependencies>
@@ -63,6 +63,18 @@
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.6.3</version>
+				<extensions>true</extensions>
+				<configuration>
+					<serverId>ossrh</serverId>
+					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+					<autoReleaseAfterClose>true</autoReleaseAfterClose>
 				</configuration>
 			</plugin>
 		</plugins>
