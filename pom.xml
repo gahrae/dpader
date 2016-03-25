@@ -4,6 +4,10 @@
 	<groupId>com.github.gahrae</groupId>
 	<artifactId>dpader</artifactId>
 	<version>1.0.0</version>
+	
+	<name>dpader</name>
+	<description>State Space Search solution using Hipster4j</description>
+	<url>http://github.com/gahrae/dpader</url>
 
 	<licenses>
 		<license>
