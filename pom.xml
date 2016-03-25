@@ -28,6 +28,11 @@
 		<developerConnection>scm:git:git@github.com:gahrae/dpader.git</developerConnection>
 		<url>git@github.com:gahrae/dpader.git</url>
 	</scm>
+	
+   <issueManagement>
+       <system>GitHub Issue Management</system>
+       <url>https://github.com/gahrae/dpader/issues</url>
+    </issueManagement>
 
 	<dependencies>
 		<dependency>
